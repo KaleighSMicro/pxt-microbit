@@ -112,6 +112,34 @@ input.onGesture(Gesture.Shake, () =>  {
     basic.showNumber(8)
 
 })
+input.onGesture(Gesture.Shake, function () {
+    basic.clearScreen()
+    randomNumber = randint(0, 7)
+    if (randomNumber == 7) {
+        basic.showString("POSSIBLY")
+    } else if (randomNumber == 6) {
+        basic.showString("Absolutely NOT")
+    } else if (randomNumber == 5) {
+        basic.showString("GO DO IT")
+    } else if (randomNumber == 4) {
+        basic.showString("DEFINATELY")
+    } else if (randomNumber == 3) {
+        basic.showString("TRY AGAIN")
+    } else if (randomNumber == 2) {
+        basic.showString("YES")
+    } else if (randomNumber == 1) {
+        basic.showString("NO")
+    } else {
+        basic.showString("I DON'T KNOW")
+    }
+    basic.showNumber(8)
+})
+let randomNumber = 0
+basic.showString("ASK A QUESTION")
+basic.showNumber(8)
+
+
+
 ```
 
 ## ~avatar avatar
